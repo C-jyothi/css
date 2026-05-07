@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Post Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .blog-post {
+            width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .author {
+            color: gray;
+            font-style: italic;
+        }
+
+        /* First line styling */
+        .content::first-line {
+            font-weight: bold;
+        }
+
+        /* First letter styling */
+        .content::first-letter {
+            font-size: 35px;
+            color: crimson;
+        }
+
+        /* Quote block */
+        blockquote {
+            background-color: #eeeeee;
+            padding: 15px;
+            border-left: 5px solid blue;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        /* Add opening quote automatically */
+        blockquote::before {
+            content: "“ ";
+            font-size: 30px;
+            color: darkblue;
+        }
+
+        /* Link pseudo-classes */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* h4 elements side-by-side */
+        h4 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        /* Adjacent sibling selector */
+        h4 + h4 {
+            color: green;
+            background-color: #dfffdc;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blog-post">
+
+        <h1>My First Blog Post</h1>
+
+        <p class="author">Written by Chandra Jyothi</p>
+
+        <p class="content">
+            Web development is an exciting field that combines creativity and programming skills.
+            Learning HTML and CSS helps in designing attractive webpages and layouts. Pseudo-elements
+            and pseudo-classes make webpages more interactive and visually appealing.
+        </p>
+
+        <blockquote>
+            Good design is as little design as possible.
+        </blockquote>
+
+        <p>
+            Visit 
+            <a href="https://www.example.com">Example Website</a>
+            for more details.
+        </p>
+
+        <h4>HTML Basics</h4>
+        <h4>CSS Styling</h4>
+
+    </div>
+
+</body>
+</html>
