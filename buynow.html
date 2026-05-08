@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product card</title>
+    <style>
+        h2{
+            font-size:20px;
+        }
+        .card{
+            width:300px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .product_img{
+            width:250px;
+            border:20px solid black;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        button{
+            padding:10px 20px;
+            background-color: black;
+            color:white;
+            border:none;
+            cursor: pointer;
+            
+        }
+        @media screen and (max-width:600px){
+            .card{
+                text-align:center;
+            }
+            h2{
+                font-size: 22px;
+        
+            }
+            p{
+                font-size: 14px;
+            }
+            button{font-size: 14px;
+            }
+        }
+        @media screen and  (orientation: landscape) {
+            .card{
+                background-color: lightblue;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRN4lGgdTKB9DBMBYvbSuy5ltB5YhOecms6nZWuIUkB5TIaRDKtYjZ7OtDiM4Q1jemhhQwxYvy_hgGsj-nloDZnMyriHplG_CVKuc744KANEcDl22nrvM7o" 
+        alt="Product Image"
+         class="product_img">
+         <p>stay connected with our stylish bag</p>
+        <h2>Smart Watch</h2>
+        <button>Buy Now</button>
+    </div>
+</body>
+</html>
